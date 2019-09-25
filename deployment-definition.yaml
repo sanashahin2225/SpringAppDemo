@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring_app
+spec:
+  template:
+    metadata:
+      name: spring_app
+     spec:
+      containers:
+      - name: spring_app
+        image: sanashahin2225/spring_app
+  replicas: 1
+  
